@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mashukui.github.io/visual-dashboard-demo/sitemap.xml
+Sitemap: https://mashukui.github.io/visual-dashboard-demo2/sitemap.xml
