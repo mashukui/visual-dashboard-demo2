@@ -1,0 +1,16 @@
+(function () {
+    var box = document.querySelector('.box');
+    if (!box) return;
+
+    function fitDashboard() {
+        var designWidth = Math.max(box.scrollWidth, 1280);
+        var designHeight = Math.max(box.scrollHeight, 720);
+        var scale = Math.min(1, window.innerWidth / designWidth);
+        box.style.transformOrigin = 'top left';
+        box.style.transform = 'scale(' + scale + ')';
+        document.body.style.minHeight = Math.ceil(designHeight * scale) + 'px';
+    }
+
+    window.addEventListener('resize', fitDashboard, { passive: true });
+    fitDashboard();
+}());

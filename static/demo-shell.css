@@ -1,0 +1,7 @@
+html, body { margin: 0; min-width: 320px; background: #05080d; overflow-x: hidden; }
+.demo-toolbar { position: fixed; z-index: 20; top: 14px; left: 14px; right: 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; pointer-events: none; font: 600 12px/1.2 ui-sans-serif, system-ui, sans-serif; }
+.demo-toolbar a, .demo-toolbar span { pointer-events: auto; display: inline-flex; align-items: center; min-height: 34px; padding: 0 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: rgba(5,8,13,.72); color: #f4f8ff; text-decoration: none; backdrop-filter: blur(10px); }
+.demo-toolbar a:hover, .demo-toolbar a:focus-visible { border-color: #54d6c7; color: #54d6c7; }
+.demo-toolbar a:focus-visible { outline: 2px solid #54d6c7; outline-offset: 2px; }
+.demo-seo-title { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 600px) { .demo-toolbar span { display: none; } .demo-toolbar { justify-content: flex-start; } }
